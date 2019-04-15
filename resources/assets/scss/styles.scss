@@ -135,7 +135,7 @@ header {
   filter: blur(0px);
   transition: filter 0.4s ease-in-out;
   &.cart-popup-active{
-    filter: blur(200px);
+    filter: blur(20px);
   }
   &.home-page{
 
@@ -195,8 +195,29 @@ header {
   bottom: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 5% 50% 1fr 1fr 1fr;
+  .cart-title{
+    width: 100px;
+    max-width: 100px;
+    position: relative;
+    .title{
+      position: absolute;
+      top: 20px;
+      left: -62px;
+      font-size: 2rem;
+      color: #b6bfc6;
+      transform: rotate(-90deg);
+      width: 200px;
+    }
+  }
   .cart-items{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    .item-container {
+      width: 200px;
+      display: inline-block;
+    }
     .item{
       width: 200px;
       display: flex;
@@ -239,6 +260,16 @@ header {
         color: white;
         transition: background-color 0.5s ease-in-out;
       }
+    }
+  }
+  .product-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title{
+      background: white;
+
     }
   }
 }
