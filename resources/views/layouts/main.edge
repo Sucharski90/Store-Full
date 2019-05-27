@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
-  <link rel="stylesheet" href="/css/styles.css"
+  <title>
+      @!section('title')
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <header>
@@ -17,22 +20,12 @@
       <a href="#" class="cart-link">Cart<span>4</span></a>
     </div>
   </header>
-  <section class="content-area home-page">
-    <div class="top-section">
-      <div class="product">
-        <div class="circle">
-          <img src="img/products/KnobCreek.png">
-        </div>
-      </div>
-      <div class="titles">
-          <h3>Yeezy</h3>
-          <h1>Boost 350</h1>
-        </div>
-    </div>
-  </section>
+  
+    @!section('content')
+  
 
 
-  <section id="cart-popup" class="active">
+  <section id="cart-popup" class="">
       <div class="cart-title">
         <div class="title">My Cart</div>
       </div>
@@ -111,14 +104,21 @@
                         </div>
     </div>
     <div class="product-total">
+      <div class="inside-container">
         <div class="title">Total</div>
         <div class="number">x4</div>
+      </div>
     </div>
     <div class="price-total">
+        <div class="inside-container">
       <div class="title">Total</div>
       <div class="number">$3,000</div>
     </div>
-    <div class="checkout">Checkout</div>
+    </div>
+    <div class="checkout">
+      <div class="title">Checkout</div>
+      <span class="ti-shopping-cart"></span>
+    </div>
   </section>
 
   <script src="js/dist/vendors~FirstComp.js"></script>
