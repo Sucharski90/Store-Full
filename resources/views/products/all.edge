@@ -1,0 +1,38 @@
+@layout('layouts/main')
+
+@section('title')
+Whiskey | All Products
+@endsection
+@section('content')
+<section class="content-area products-all-page">
+  <div class="filter-section">
+ <div class="filter">
+   <input type="checkbox" id="types" class="toggle" checked />
+   <label for="types">Types</label>
+   <div class="content">
+     <div class="type">
+        <div class="option">Scotch</div>
+       <div class="option">Burbon</div>
+     </div>
+   </div>
+ </div>
+  </div>
+
+  
+  <div class="all-products-grid">
+    
+    @each(products in products)
+    <div class="product-wrap">
+        <div class="product">
+            <div class="circle">
+              <img src="img/products/KnobCreek.png">
+            </div>
+          </div>
+          <div class="title">Knob Creek</div>
+          <div class="price">$35.00</div>
+        </div>
+    @endeach
+    
+      </div>
+</section>
+@endsection
