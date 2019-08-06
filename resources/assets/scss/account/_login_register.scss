@@ -12,6 +12,14 @@
 
     .login-grid{
         display: grid;
+        &.login{
+            grid-template-columns: 1fr 2px 1fr;
+            grid-gap: 20px;
+        }
+        &.register{
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
         grid-template-columns: 1fr 2px 1fr;
         grid-gap: 20px;
         .line{
@@ -22,24 +30,11 @@
         form{
             display: flex;
             flex-direction: column;
-            input[type="password"], input[type="email"]{
-                margin: 0 0 1rem;
-                font-size: 1rem;
-                padding: 10px;
-                border: 1px solid #6c6c6c;
-            }
+            
             a{
                 margin-bottom: 1rem;
             }
-            button{
-                border: none;
-                margin: 0 0 1rem;
-                font-size: 1rem;
-                padding: 10px;
-                background-color: rgb(93, 124, 236);
-                color: white;
-                cursor: pointer;
-            }
+            
         }
         .social-accounts{
             display: flex;

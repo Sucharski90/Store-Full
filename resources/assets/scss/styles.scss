@@ -4,6 +4,7 @@
 @import "pages/home";
 @import "products/_all";
 @import "account/login_register";
+@import "products/single";
 
 ol,
 ul {
@@ -238,4 +239,23 @@ header {
 .box-container {
   background: white;
   padding: 80px 20px;
+}
+
+form{
+input[type="password"], input[type="email"], input[type="text"]{
+  width: 100%;
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #6c6c6c;
+}
+  button{
+    border: none;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgb(93, 124, 236);
+    color: white;
+    cursor: pointer;
+}
 }

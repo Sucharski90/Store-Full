@@ -21,6 +21,7 @@ Route.get('/about', 'PageController.about');
 
 
 Route.get('/products', 'ProductController.index');
+Route.get('/:brands/:subcategory/:slug', 'ProductController.show');
 Route.get('/products/new-arrivals', 'ProductController.newArrivals');
 Route.get('/register', 'UserController.register');
 Route.get('/login', 'UserController.login');
