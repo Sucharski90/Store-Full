@@ -71,6 +71,9 @@ header {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 20px 0;
+    #CartBtnRoot{
+      display: inline-block;
+    }
     a {
       color: #484c4f;
       padding-right: 15px;
@@ -110,7 +113,6 @@ header {
   &.cart-popup-active {
     filter: blur(20px);
   }
-  &.home-page {}
 }
 
 
