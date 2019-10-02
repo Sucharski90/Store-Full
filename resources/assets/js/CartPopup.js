@@ -26,6 +26,22 @@ class CartPopup extends Component {
 						</div>
 					</div>
 				</div>
+				<div class="product-total">
+					<div class="inside-container">
+						<div class="title">Total</div>
+						<div class="number">x4</div>
+					</div>
+				</div>
+				<div class="price-total">
+					<div class="inside-container">
+						<div class="title">Total</div>
+						<div class="number">$3,000</div>
+					</div>
+				</div>
+				<div class="checkout">
+					<div class="title">Checkout</div>
+					<span class="ti-shopping-cart" />
+				</div>
 			</section>
 		);
 	}
